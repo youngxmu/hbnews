@@ -1,6 +1,5 @@
 <template>
 <div class="list-wrapper">
-  <elNav></elNav>
   <ul class="news-list">
     <li class="news-desc normal" v-for="news in list">
       <a :href="news.shareurl" :title="news.title">
@@ -18,11 +17,9 @@
 </div>
 </template>
 <script>
-import elNav from '@/components/Nav.vue'
 export default {
-  name: 'news-list',
+  name: 'list',
   components: {
-    elNav
   },
   data () {
     return {
